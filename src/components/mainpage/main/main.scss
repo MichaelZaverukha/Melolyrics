@@ -1,0 +1,185 @@
+.main{
+   font-family: 'Noto Sans',sans-serif;
+   &__form{
+      max-width: 550px;
+      margin: 0px auto;
+      margin-top: 250px;
+      padding: 0px 30px;
+   }
+   &__input-black{
+      width: 400px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      scroll-margin-top: 50vh;
+   }
+   &__input-white{
+      width: 400px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      scroll-margin-top: 50vh;
+   }
+   &__input-black:focus{
+      box-shadow: 0 0 0 2px black;
+   }
+   &__input-white:focus{
+      box-shadow: 0 0 0 2px #62ffe2;
+   }
+   &__button-black{
+      min-width: 100px;
+      margin-left: 10px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      background-color: #62ffe2;
+      font-family: 'Bruno Ace',sans-serif;
+      border: none;
+      color: black;
+      transition: all 0.3s ease-in-out;
+   }
+   &__button-white{
+      min-width: 100px;
+      margin-left: 10px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      background-color: black;
+      font-family: 'Bruno Ace',sans-serif;
+      border: none;
+      color: white;
+      transition: all 0.3s ease-in-out,
+   }
+   &__button-black:hover{
+      background-color: #068870;
+   }
+   &__button-white:hover{
+      background-color: rgb(59, 56, 56)
+   }
+   &__title{
+      text-align: center;
+      font-family: 'Bruno Ace',sans-serif;
+      font-size: 40px;
+      margin-bottom: 30px;
+      padding: 0px 15px;
+   }
+   &__topchart{
+      max-width: 1200px;
+      margin: 0px auto;
+      margin-top: 100px;
+      transition: all 0.3s ease-in-out;
+      padding: 0px 15px;
+      padding-bottom: 50px;
+   }
+   &__topchart-title{
+      font-size: 32px;
+      color: #62ffe2;
+      font-family: 'Bruno Ace',sans-serif;
+      text-align: center;
+   }
+   &__topchart-list{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      
+   }
+   &__topchart-item-black{
+      color: #07f0dce0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      font-size: 20px;
+      border: 2px solid #09d1c7;
+      padding: 15px 10px;
+      background-color: black;
+      
+   }
+   &__topchart-item-white{
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      font-size: 20px;
+      border: 2px solid black;
+      padding: 15px 10px;
+      background-color: white;
+      
+   }
+   &__topchart-track{
+      flex: 1;
+   }
+   &__topchart-name{
+      flex: 1;
+      text-align: center;
+   }
+   &__topchart-rating{
+      text-align: end;
+   } 
+   &__topchart-genre{
+      flex: 1;
+      text-align: center;
+   }
+   &__topchart-link{
+      text-decoration: none;
+      :hover{
+         background-color: black;
+         color:white;
+
+      }
+  
+   }
+   @media screen and (max-width: 600px){
+      max-width: 600px;
+      &__title{
+         font-size: 28px;
+      }
+      &__form{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      
+      &__input-black{
+         max-width: 300px;
+         width: 100%;
+      }
+      &__input-white{
+         max-width: 300px;
+         width: 100%;
+      }
+      &__button-white{
+         max-width: 330px;
+         width: 100%;
+         margin: 0;
+         margin-top: 15px;
+      }
+      &__button-black{
+         max-width: 330px;
+         width: 100%;
+         margin: 0;
+         margin-top: 15px;
+      }
+      &__topchart-title{
+         font-size: 25px;
+      }
+      &__form{
+         margin-top: 100px;
+      }
+      &__topchart-item-black{
+         font-size: 16px;
+         margin: 0;
+      }
+      &__topchart-item-white{
+         font-size: 16px;
+         margin: 0;
+      }
+      &__buttonlink{
+         max-width: 330px;
+         width: 100%;
+         padding: 0 15px;
+      }
+   }
+}

@@ -1,0 +1,62 @@
+.singlepage{
+   display: flex;
+   gap: 50px;
+   max-width: 1400px;
+   margin: 0px auto;
+   margin-top: 100px;
+   padding: 0px 30px;
+   padding-bottom: 30px;
+   &__lyrics-block{
+      flex: 1;
+   }
+   &__lyrics{
+      font-size: 26px;
+      font-family: 'Noto Sans',sans-serif;
+      line-height: 60px;
+      white-space: pre-wrap;
+   }
+   
+   &__description{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Noto Sans',sans-serif;
+      gap: 50px;
+   }
+   &__name{
+      font-size: 45px;
+      font-weight: 700;
+   }
+   &__artist{
+      font-size: 32px;
+   }
+   &__rating{
+      font-size: 21px;
+   }
+   &__genre{
+      font-size: 21px;
+   }
+   &__album{
+      font-size: 21px;
+   }
+   @media screen and (max-width: 1200px){
+   
+      &__lyrics{
+         font-size: 25px;
+      }
+      &__name{
+         font-size: 35px;
+      }
+      
+   }
+   @media screen and (max-width: 750px){
+      flex-direction: column-reverse;
+      backdrop-filter: blur(5px);
+      &__description{
+         align-items: center;
+      }
+      &__lyrics{
+         text-align: center;
+      }
+   }
+}

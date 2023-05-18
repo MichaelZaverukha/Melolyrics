@@ -1,0 +1,46 @@
+
+
+.header{
+   transition: all 0.3s ease-in-out;
+   padding: 0px 15px;
+   padding-top: 25px;
+   
+   &__menu{
+      max-width: 1440px;
+      width: 100%;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__search-logo{
+      fill: #07ffd2;
+   }
+   &__title{
+      font-family: 'Bruno Ace',sans-serif;
+      color: #07ffd2;
+      font-size: 45px;
+      text-decoration: none;
+   }
+   &__changetheme{
+      border: none;
+      background: none;
+      margin: 0;
+   }
+   @media screen and (max-width: 600px){
+      max-width: 600px;
+      &__title{
+         font-size: 26px;
+      }
+      &__search-logo{
+         width: 36px;
+         height: 36px;
+      }
+      &__changetheme svg{
+         width: 36px;
+         height: 36px;
+      }
+   }
+}
+
+
